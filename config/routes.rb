@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  resources :investments
+
+  devise_for :users
+  # resources :investments
   root 'investments#new'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
