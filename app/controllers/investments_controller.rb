@@ -4,7 +4,7 @@ class InvestmentsController < ApplicationController
 
   # GET /investments or /investments.json
   def index
-    @investments = Investment.all
+    @investments = Investment.where(group_id: params[:group_id])
   end
 
   # GET /investments/1 or /investments/1.json
