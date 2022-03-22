@@ -3,7 +3,8 @@ class GroupsController < ApplicationController
 
   # GET /groups or /groups.json
   def index
-    @groups = Group.all
+    @groups = Group.includes(:investments).all
+    session[:current_page] = 'Groups'
   end
 
   # GET /groups/1 or /groups/1.json
