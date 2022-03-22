@@ -1,11 +1,9 @@
 Rails.application.routes.draw do
-  resources :groups
+  devise_for :users, :controllers => {:registrations => "registrations"}
+  
+  resources :groups, only: [:index, :new, :create] do
+    resources :investments, only: [:index, :new, :create, :destroy]
+  end
 
-  devise_for :users
-  resources :investments
-  root 'investments#new'
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
+  root to: 'splash#index'
 end
