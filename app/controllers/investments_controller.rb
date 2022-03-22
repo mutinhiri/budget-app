@@ -6,6 +6,7 @@ class InvestmentsController < ApplicationController
   def index
     @investments = Investment.where(group_id: params[:group_id])
     @group_name = Group.find(params[:group_id])
+    session[:current_page] = 'Investments'
   end
 
   # GET /investments/1 or /investments/1.json
