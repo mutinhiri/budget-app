@@ -17,7 +17,7 @@ class InvestmentsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create investment" do
     assert_difference("Investment.count") do
-      post investments_url, params: { investment: {  } }
+      post investments_url, params: { investment: { amount: @investment.amount, name: @investment.name } }
     end
 
     assert_redirected_to investment_url(Investment.last)
@@ -34,7 +34,7 @@ class InvestmentsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update investment" do
-    patch investment_url(@investment), params: { investment: {  } }
+    patch investment_url(@investment), params: { investment: { amount: @investment.amount, name: @investment.name } }
     assert_redirected_to investment_url(@investment)
   end
 

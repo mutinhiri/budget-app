@@ -65,6 +65,6 @@ class InvestmentsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def investment_params
-      params.fetch(:investment, {})
+      params.require(:investment).permit(:name, :amount)
     end
 end

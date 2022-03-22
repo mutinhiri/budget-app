@@ -14,6 +14,8 @@ class InvestmentsTest < ApplicationSystemTestCase
     visit investments_url
     click_on "New investment"
 
+    fill_in "Amount", with: @investment.amount
+    fill_in "Name", with: @investment.name
     click_on "Create Investment"
 
     assert_text "Investment was successfully created"
@@ -24,6 +26,8 @@ class InvestmentsTest < ApplicationSystemTestCase
     visit investment_url(@investment)
     click_on "Edit this investment", match: :first
 
+    fill_in "Amount", with: @investment.amount
+    fill_in "Name", with: @investment.name
     click_on "Update Investment"
 
     assert_text "Investment was successfully updated"
