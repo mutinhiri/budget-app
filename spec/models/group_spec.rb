@@ -21,7 +21,13 @@ RSpec.describe Group, type: :model do
     @apple.user_id = nil
     expect(@apple).to_not be_valid
   end
-  it 'should render correct name'
+  it 'should render correct name' do
+    expect(@user).to be_valid
+  end
+  it 'should return username' do
+    expect(@user.name).to eq('Bunbee')
+  end
+
 
 
 end
