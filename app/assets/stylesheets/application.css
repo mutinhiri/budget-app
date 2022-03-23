@@ -13,9 +13,6 @@
  *= require_tree .
  *= require_self
  */
-:root {
-  /* --green: #a53737; */
-}
 
 .gray {
   color: lightgray !important;
@@ -33,13 +30,13 @@
 
 .green {
   color: white !important;
-  background-color: #5fb523 !important
+  background-color: #5fb523 !important;
 }
 
 .blue {
-  color: #3778c2
+  color: #3778c2;
 }
 
 .grey {
-  color: #434b54
+  color: #434b54;
 }
