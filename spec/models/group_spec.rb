@@ -9,4 +9,19 @@ RSpec.describe Group, type: :model do
   it 'valid when all fields are not nil' do
     expect(@apple).to be_valid
   end
+  it 'name field is required' do
+    @apple.name = nil
+    expect(@apple).to_not be_valid
+  end
+  it 'icon field is required' do
+    @apple.icon = nil
+    expect(@apple).to_not be_valid
+  end
+  it 'should belong to an user' do
+    @apple.user_id = nil
+    expect(@apple).to_not be_valid
+  end
+  it 'should render correct name'
+
+
 end
