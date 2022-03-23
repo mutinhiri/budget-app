@@ -125,3 +125,5 @@ Give a ⭐️ if you like this project! 😄
 
 
 ## Acknowledgments
+
+Original design by Gregoire Vella on Behance Profile: [Behance](https://www.behance.net/gregoirevella)
