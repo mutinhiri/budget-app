@@ -1,24 +1,129 @@
-# README
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+# Budget App 
 
-* Ruby version
 
-* System dependencies
 
-* Configuration
+> In this project we have build a Recipe App using Ruby on Rails.
 
-* Database creation
+## Built With
 
-* Database initialization
+- Ruby on Rails
 
-* How to run the test suite
+- Git - Github - GitFlow
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+## Getting Started
 
-* ...
+
+To get a local copy up and running follow these simple example steps.
+
+
+### Prerequisites
+
+
+- Visual Studio Code or Sublime Text
+
+- Git
+
+- LiveServer Extension
+
+
+### Setup
+
+
+Go to the top of the page, press te green button that says "Code", and copy the link. Then you have to go to your console and type " git clone 'repository-url.com' ".
+
+
+- Next step: Go to usage section!
+
+
+
+### Install
+
+
+No extra dependencies needed to use the code!
+
+
+### Test
+
+
+- Ruby Linters 
+
+
+```
+
+rubocop
+
+```
+
+
+- Css Linters
+
+
+```
+
+npx stylelint "**/*.{css,scss}"
+
+```
+
+- Rspec Test Tool
+
+``` 
+
+rspec spec/
+
+```
+
+
+### Usage
+
+
+- Once you clone the repository:
+
+
+
+```
+
+cd repository-clone
+
+bundle install
+
+rails db:create
+
+rails db:migrate
+
+rails s
+
+```
+
+
+You are ready to go!
+
+
+## Authors
+
+
+👤 **Barnabas Mutinhiri**
+
+- GitHub: [@mutinhiri](https://github.com/mutinhiri)
+
+- LinkedIn: [@bunbee](https://www.linkedin.com/in/bunbee)
+
+
+## 🤝 Contributing
+
+
+Contributions, issues, and feature requests are welcome!
+
+
+## Show your support
+
+
+Give a ⭐️ if you like this project! 😄
+
+
+## Acknowledgments
+
+Original design by Gregoire Vella on Behance Profile: [Behance](https://www.behance.net/gregoirevella)

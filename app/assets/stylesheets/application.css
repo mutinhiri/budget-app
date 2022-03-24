@@ -13,3 +13,30 @@
  *= require_tree .
  *= require_self
  */
+
+.gray {
+  color: lightgray !important;
+}
+
+.bottom {
+  padding: 10px !important;
+  background-color: var(--green) !important;
+}
+
+.bottom-btn {
+  background-color: transparent !important;
+  color: white !important;
+}
+
+.green {
+  color: white !important;
+  background-color: #5fb523 !important;
+}
+
+.blue {
+  color: #3778c2;
+}
+
+.grey {
+  color: #434b54;
+}
